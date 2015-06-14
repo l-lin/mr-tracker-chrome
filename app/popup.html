@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" ng-csp>
+<head>
+    <meta charset="utf-8">
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular/angular-csp.css" type="screen">
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/popup.css -->
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+    <link href="styles/popup.css" rel="stylesheet" type="screen">
+    <!-- endbuild -->
+</head>
+<body ng-app="mrTracker">
+
+<div ng-controller="TrackerCtrl as tracker">
+    <div ng-if="tracker.isAuthenticated">
+        <article ui-view></article>
+    </div>
+    <div ng-if="!tracker.isAuthenticated" class="sign-in">
+        <md-content layout="row" layout-align="center center" class="main-content">
+            <md-button class="md-raised md-accent" aria-label="Sign in" ng-click="tracker.signIn()">
+                Sign in&nbsp;<i class="fa fa-sign-in"></i>
+            </md-button>
+        </md-content>
+    </div>
+</div>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-resource/angular-resource.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="bower_components/angular-material/angular-material.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/popup.js -->
+<script src="scripts/constants.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/mangas/mangas.js"></script>
+<script src="scripts/mangas/mangas.service.js"></script>
+<script src="scripts/mangas/mangas.ctrl.js"></script>
+<script src="scripts/mangas/mangas.router.js"></script>
+<script src="scripts/header/header.js"></script>
+<script src="scripts/notifications/notifications.js"></script>
+<!-- endbuild -->
+</body>
+</html>

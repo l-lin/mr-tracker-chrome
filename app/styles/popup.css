@@ -1,0 +1,91 @@
+body {
+    min-width: 650px;
+}
+
+/* HEADER */
+.header {
+    min-height: 40px;
+}
+
+.header .md-toolbar-tools {
+    height: 40px;
+}
+
+.header .btn {
+    font-size: 24px;
+    color: #fff;
+}
+
+.header button {
+    /*top: 15px;*/
+}
+
+/* MATERIAL DESIGN */
+md-toolbar {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+md-sidenav {
+    width: 150px;
+    min-width: 150px;
+}
+
+/* CUSTOM */
+.main-content {
+    padding-bottom: 10px;
+}
+
+.favorite {
+    color: #ffd76e;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.novel-form {
+    padding-top: 40px;
+}
+
+.novel-form-btn {
+    padding-top: 20px;
+}
+
+.sign-in {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #DDDDDD;
+}
+
+.notifications-label {
+    margin-left: 20px;
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #F44336;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.notifications {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #F5F5F5;
+}
+
+.notifications .md-button {
+    text-align: left;
+    margin: 0;
+}
+
+.notifications .md-button.md-warn {
+    text-align: center;
+}
+
+.feed-url {
+    text-overflow: ellipsis;
+    width: 280px;
+    white-space: nowrap;
+    overflow: hidden;
+}

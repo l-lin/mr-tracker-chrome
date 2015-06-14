@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Manga reader tracker",
+    "description": "Yet another RSS feed reader"
+  },
+  "appDescription": {
+    "message": "Tracks your reading on your favorite mangas",
+    "description": "Yet another RSS feed reader"
+  }
+}

@@ -1,0 +1,41 @@
+<md-toolbar class="header">
+    <div class="md-toolbar-tools">
+        <span flex></span>
+        <md-button class="md-icon-button" aria-label="Display options" ng-click="header.displayOptions()">
+            <span class="btn"><i class="fa fa-bars"></i></span>
+        </md-button>
+    </div>
+</md-toolbar>
+
+<md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="options">
+    <md-content layout-padding="">
+        <md-grid-list
+                md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6"
+                md-row-height-gt-md="1:1" md-row-height="4:3"
+                md-gutter="8px" md-gutter-gt-sm="4px">
+            <md-grid-tile md-rowspan="3" md-colspan="2" md-colspan-sm="1">
+                <md-button class="md-raised md-primary">
+                    <i class="fa fa-download"></i>
+                    <md-tooltip>Import mangas</md-tooltip>
+                </md-button>
+                <!--<md-grid-tile-footer>-->
+                    <!--<h3>Import</h3>-->
+                <!--</md-grid-tile-footer>-->
+            </md-grid-tile>
+        </md-grid-list>
+        <md-button class="md-raised md-primary">
+            <i class="fa fa-upload"></i>
+            <md-tooltip>Export mangas</md-tooltip>
+        </md-button>
+        <br />
+        <md-button class="md-raised md-primary md-hue-2">
+            <i class="fa fa-eraser"></i>
+            <md-tooltip>Untrack mangas</md-tooltip>
+        </md-button>
+        <br />
+        <md-button ng-click="header.signOut()" class="md-raised md-warn">
+            <i class="fa fa-sign-out"></i>
+            <md-tooltip>Sign out</md-tooltip>
+        </md-button>
+    </md-content>
+</md-sidenav>
