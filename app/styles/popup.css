@@ -43,11 +43,24 @@ md-sidenav {
     padding-bottom: 2px;
 }
 
+.export md-dialog-content {
+    margin-top: 20px;
+}
+
 /* CUSTOM */
 samp b {
     background-color: #03A9F4;
     color: #fff;
 }
+
+.wait {
+    height: 400px;
+    background-image: url("../images/wait.png");
+}
+
+
+
+
 
 .main-content {
     padding-bottom: 10px;

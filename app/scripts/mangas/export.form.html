@@ -1,0 +1,18 @@
+<md-dialog aria-label="Import mangas" class="export">
+    <md-toolbar md-scroll-shrink>
+        <div class="md-toolbar-tools">
+            <h3>Copy paste the content of the input</h3>
+        </div>
+    </md-toolbar>
+    <md-dialog-content>
+        <md-input-container flex>
+            <input ng-model="form.mangas" disabled />
+        </md-input-container>
+    </md-dialog-content>
+    <div class="md-actions" layout="row">
+        <span flex></span>
+        <md-button type="button" ng-click="form.cancel()" class="md-default">
+            Close
+        </md-button>
+    </div>
+</md-dialog>

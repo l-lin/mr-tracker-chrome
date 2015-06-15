@@ -1,21 +1,24 @@
-<article ng-controller="NotificationsCtrl as notifications" ng-if="notifications.hasNotifications">
-    <section layout="row" layout-align="start center">
-        <div class="md-whiteframe-z1 notifications-label">
-            News&nbsp;<i class="fa fa-bullhorn"></i>
-        </div>
-    </section>
-    <md-whiteframe class="md-whiteframe-z1 notifications" layout="column">
-        <section layout="row" layout-align="start center" ng-repeat="notification in notifications.notifications">
-            <md-button class="md-primary" flex class="clickable"
-                       ng-click="notifications.openNotification(notification.link)">
-                <md-tooltip>{{ notification.link }}</md-tooltip>
-                {{ notification.title }}
-            </md-button>
-            <md-button class="md-warn" flex="5"
-                       ng-click="notifications.removeNotification(notification.link)"
-                       aria-label="Remove notification">
-                <i class="fa fa-close"></i>
-            </md-button>
+<article ng-controller="NotificationsCtrl as notifications">
+    <div class="wait" ng-if="!notifications.hasNotifications"></div>
+    <div ng-if="notifications.hasNotifications">
+        <section layout="row" layout-align="start center">
+            <div class="md-whiteframe-z1 notifications-label">
+                News&nbsp;<i class="fa fa-bullhorn"></i>
+            </div>
         </section>
-    </md-whiteframe>
+        <md-whiteframe class="md-whiteframe-z1 notifications" layout="column">
+            <section layout="row" layout-align="start center" ng-repeat="notification in notifications.notifications">
+                <md-button class="md-primary" flex class="clickable"
+                           ng-click="notifications.openNotification(notification.link)">
+                    <md-tooltip>{{ notification.link }}</md-tooltip>
+                    {{ notification.title }}
+                </md-button>
+                <md-button class="md-warn" flex="5"
+                           ng-click="notifications.removeNotification(notification.link)"
+                           aria-label="Remove notification">
+                    <i class="fa fa-close"></i>
+                </md-button>
+            </section>
+        </md-whiteframe>
+    </div>
 </article>

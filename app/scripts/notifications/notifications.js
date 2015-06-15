@@ -28,18 +28,7 @@ function NotificationsCtrl(Notification, $q) {
     vm.openNotification = openNotification;
     vm.removeNotification = removeNotification;
 
-//    Notification.query().$promise.then(function(notifications) {
-//        notifications.forEach(function(notification) {
-//            if (!mapLinkIds[notification.link]) {
-//                vm.notifications.push(notification);
-//                mapLinkIds[notification.link] = [];
-//            }
-//            mapLinkIds[notification.link].push(notification);
-//        });
-//        if (notifications.length > 0) {
-//            vm.hasNotifications = true;
-//        }
-//    });
+    //_init();
 
     function openNotification(link) {
         removeNotification(link);
@@ -73,6 +62,21 @@ function NotificationsCtrl(Notification, $q) {
             chrome.runtime.sendMessage({
                 rerender: true
             });
+        });
+    }
+
+    function _init() {
+        Notification.query().$promise.then(function(notifications) {
+            notifications.forEach(function(notification) {
+                if (!mapLinkIds[notification.link]) {
+                    vm.notifications.push(notification);
+                    mapLinkIds[notification.link] = [];
+                }
+                mapLinkIds[notification.link].push(notification);
+            });
+            if (notifications.length > 0) {
+                vm.hasNotifications = true;
+            }
         });
     }
 }

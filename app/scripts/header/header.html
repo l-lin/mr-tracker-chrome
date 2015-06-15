@@ -2,7 +2,7 @@
 <md-toolbar class="header">
     <div class="md-toolbar-tools">
         <div ng-if="header.showSwitch">
-            <md-switch aria-label="Track manga" ng-model="header.isMangaTracked" title="{{ header.isMangaTrackedMessage }}" ng-change="header.changeStatus()">
+            <md-switch aria-label="Track manga" ng-model="header.isMangaTracked" title="{{ header.isMangaTrackedMessage }}" ng-change="header.changeStatus(header.isMangaTracked)">
             </md-switch>
         </div>
         <span flex></span>
