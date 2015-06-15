@@ -17,7 +17,8 @@
 
 <div ng-controller="TrackerCtrl as tracker">
     <div ng-if="tracker.isAuthenticated">
-        <article ui-view></article>
+        <header ng-include="'scripts/header/header.html'"></header>
+        <md-content ng-include="'scripts/notifications/notifications.list.html'" layout-align="center center" ></md-content>
     </div>
     <div ng-if="!tracker.isAuthenticated" class="sign-in">
         <md-content layout="row" layout-align="center center" class="main-content">
@@ -43,9 +44,6 @@
 <script src="scripts/constants.js"></script>
 <script src="scripts/app.js"></script>
 <script src="scripts/mangas/mangas.js"></script>
-<script src="scripts/mangas/mangas.service.js"></script>
-<script src="scripts/mangas/mangas.ctrl.js"></script>
-<script src="scripts/mangas/mangas.router.js"></script>
 <script src="scripts/header/header.js"></script>
 <script src="scripts/notifications/notifications.js"></script>
 <!-- endbuild -->

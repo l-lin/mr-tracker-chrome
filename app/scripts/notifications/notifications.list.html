@@ -1,4 +1,4 @@
-<article ng-if="notifications.hasNotifications">
+<article ng-controller="NotificationsCtrl as notifications" ng-if="notifications.hasNotifications">
     <section layout="row" layout-align="start center">
         <div class="md-whiteframe-z1 notifications-label">
             News&nbsp;<i class="fa fa-bullhorn"></i>

@@ -1,5 +1,6 @@
 body {
     min-width: 650px;
+    min-height: 250px;
 }
 
 /* HEADER */
@@ -26,11 +27,28 @@ md-toolbar {
 }
 
 md-sidenav {
-    width: 150px;
-    min-width: 150px;
+    width: 170px;
+    min-width: 170px;
+}
+
+.options md-content {
+    padding: 8px 0 0 0;
+}
+
+.options hr {
+    border: #ccc 1px solid;
+}
+
+.form md-input-container {
+    padding-bottom: 2px;
 }
 
 /* CUSTOM */
+samp b {
+    background-color: #03A9F4;
+    color: #fff;
+}
+
 .main-content {
     padding-bottom: 10px;
 }

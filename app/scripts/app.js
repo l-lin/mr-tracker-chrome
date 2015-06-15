@@ -1,9 +1,11 @@
 'use strict';
 
 angular.module('mrTracker', [
-        'mrTracker.mangas',
         'mrTracker.constants',
+        'mrTracker.header',
+        'mrTracker.notifications',
 
+        'ngResource',
         'ngMaterial'
     ])
     .config(mdConfig)
@@ -12,10 +14,11 @@ angular.module('mrTracker', [
 /* @ngInject */
 function mdConfig($mdThemingProvider) {
     $mdThemingProvider.theme('default')
-        .primaryColor('light-blue')
-        .accentColor('light-green');
+        .primaryPalette('light-blue')
+        .accentPalette('light-green');
 }
 
+/* @ngInject */
 function TrackerCtrl($http, API_URL) {
     var vm = this;
     vm.isAuthenticated = false;

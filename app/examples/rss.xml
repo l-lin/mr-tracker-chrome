@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Mangafeeder]]></title>
+        <description><![CDATA[Latest manga chapters from Mangareader.net]]></description>
+        <link>http://www.mangareader.net</link>
+        <generator>NodeJS RSS Module</generator>
+        <lastBuildDate>Mon, 15 Jun 2015 11:53:45 GMT</lastBuildDate>
+        <atom:link href="/latest.rss" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Happiness (OSHIMI Shuzo) 5]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/happiness-oshimi-shuzo"><img src="http://s1.mangareader.net/cover/happiness-oshimi-shuzo/happiness-oshimi-shuzo-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/happiness-oshimi-shuzo/5">Happiness (OSHIMI Shuzo) 5</a>]]></description>
+            <link>http://www.mangareader.net/happiness-oshimi-shuzo/5</link>
+            <guid isPermaLink="true">http://www.mangareader.net/happiness-oshimi-shuzo/5</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Red Storm 78, 79, 80, 81, 82, 83, 84, 85]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/red-storm"><img src="http://s1.mangareader.net/cover/red-storm/red-storm-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/red-storm/85">Red Storm 85</a><br><a href="http://www.mangareader.net/red-storm/84">Red Storm 84</a><br><a href="http://www.mangareader.net/red-storm/83">Red Storm 83</a><br><a href="http://www.mangareader.net/red-storm/82">Red Storm 82</a><br><a href="http://www.mangareader.net/red-storm/81">Red Storm 81</a><br><a href="http://www.mangareader.net/red-storm/80">Red Storm 80</a><br><a href="http://www.mangareader.net/red-storm/79">Red Storm 79</a><br><a href="http://www.mangareader.net/red-storm/78">Red Storm 78</a>]]></description>
+            <link>http://www.mangareader.net/red-storm</link>
+            <guid isPermaLink="true">http://www.mangareader.net/red-storm</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Grainerie 13]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/grainerie"><img src="http://s1.mangareader.net/cover/grainerie/grainerie-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/grainerie/13">Grainerie 13</a>]]></description>
+            <link>http://www.mangareader.net/grainerie/13</link>
+            <guid isPermaLink="true">http://www.mangareader.net/grainerie/13</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[T.R.A.P. 27]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/trap"><img src="http://s1.mangareader.net/cover/trap/trap-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/trap/27">T.R.A.P. 27</a>]]></description>
+            <link>http://www.mangareader.net/trap/27</link>
+            <guid isPermaLink="true">http://www.mangareader.net/trap/27</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Diamond no Ace 267, 268]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/1447/diamond-no-ace.html"><img src="http://s1.mangareader.net/cover/diamond-no-ace/diamond-no-ace-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/diamond-no-ace/268">Diamond no Ace 268</a><br><a href="http://www.mangareader.net/diamond-no-ace/267">Diamond no Ace 267</a>]]></description>
+            <link>http://www.mangareader.net/1447/diamond-no-ace.html</link>
+            <guid isPermaLink="true">http://www.mangareader.net/1447/diamond-no-ace.html</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Kubera 241, 242]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/kubera"><img src="http://s1.mangareader.net/cover/kubera/kubera-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/kubera/242">Kubera 242</a><br><a href="http://www.mangareader.net/kubera/241">Kubera 241</a>]]></description>
+            <link>http://www.mangareader.net/kubera</link>
+            <guid isPermaLink="true">http://www.mangareader.net/kubera</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Lega no 13 8]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/lega-no-13"><img src="http://s1.mangareader.net/cover/lega-no-13/lega-no-13-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/lega-no-13/8">Lega no 13 8</a>]]></description>
+            <link>http://www.mangareader.net/lega-no-13/8</link>
+            <guid isPermaLink="true">http://www.mangareader.net/lega-no-13/8</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Abide in the Wind 86]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/abide-in-the-wind"><img src="http://s1.mangareader.net/cover/abide-in-the-wind/abide-in-the-wind-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/abide-in-the-wind/86">Abide in the Wind 86</a>]]></description>
+            <link>http://www.mangareader.net/abide-in-the-wind/86</link>
+            <guid isPermaLink="true">http://www.mangareader.net/abide-in-the-wind/86</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Exciting Feelings 39]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/exciting-feelings"><img src="http://s1.mangareader.net/cover/exciting-feelings/exciting-feelings-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/exciting-feelings/39">Exciting Feelings 39</a>]]></description>
+            <link>http://www.mangareader.net/exciting-feelings/39</link>
+            <guid isPermaLink="true">http://www.mangareader.net/exciting-feelings/39</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[All That We Hope to Be 11]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/all-that-we-hope-to-be"><img src="http://s1.mangareader.net/cover/all-that-we-hope-to-be/all-that-we-hope-to-be-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/all-that-we-hope-to-be/11">All That We Hope to Be 11</a>]]></description>
+            <link>http://www.mangareader.net/all-that-we-hope-to-be/11</link>
+            <guid isPermaLink="true">http://www.mangareader.net/all-that-we-hope-to-be/11</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Fairy Tail 440 [HOT]]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/135/fairy-tail.html"><img src="http://s1.mangareader.net/cover/fairy-tail/fairy-tail-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/fairy-tail/440">Fairy Tail 440</a>]]></description>
+            <link>http://www.mangareader.net/fairy-tail/440</link>
+            <guid isPermaLink="true">http://www.mangareader.net/fairy-tail/440</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Zai x 10 43]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/zai-x-10"><img src="http://s1.mangareader.net/cover/zai-x-10/zai-x-10-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/zai-x-10/43">Zai x 10 43</a>]]></description>
+            <link>http://www.mangareader.net/zai-x-10/43</link>
+            <guid isPermaLink="true">http://www.mangareader.net/zai-x-10/43</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Salaryman Futsumashi Okumura Yukio no Aishuu 16]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/salaryman-futsumashi-okumura-yukio-no-aishuu"><img src="http://s1.mangareader.net/cover/salaryman-futsumashi-okumura-yukio-no-aishuu/salaryman-futsumashi-okumura-yukio-no-aishuu-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/salaryman-futsumashi-okumura-yukio-no-aishuu/16">Salaryman Futsumashi Okumura Yukio no Aishuu 16</a>]]></description>
+            <link>http://www.mangareader.net/salaryman-futsumashi-okumura-yukio-no-aishuu/16</link>
+            <guid isPermaLink="true">http://www.mangareader.net/salaryman-futsumashi-okumura-yukio-no-aishuu/16</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Kamisama Dolls 43]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/1115/kamisama-dolls.html"><img src="http://s1.mangareader.net/cover/kamisama-dolls/kamisama-dolls-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/kamisama-dolls/43">Kamisama Dolls 43</a>]]></description>
+            <link>http://www.mangareader.net/kamisama-dolls/43</link>
+            <guid isPermaLink="true">http://www.mangareader.net/kamisama-dolls/43</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Koi Nashi Ai Nashi 9, 10]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/koi-nashi-ai-nashi"><img src="http://s1.mangareader.net/cover/koi-nashi-ai-nashi/koi-nashi-ai-nashi-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/koi-nashi-ai-nashi/10">Koi Nashi Ai Nashi 10</a><br><a href="http://www.mangareader.net/koi-nashi-ai-nashi/9">Koi Nashi Ai Nashi 9</a>]]></description>
+            <link>http://www.mangareader.net/koi-nashi-ai-nashi</link>
+            <guid isPermaLink="true">http://www.mangareader.net/koi-nashi-ai-nashi</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Koi dano Ai dano 33]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/koi-dano-ai-dano"><img src="http://s1.mangareader.net/cover/koi-dano-ai-dano/koi-dano-ai-dano-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/koi-dano-ai-dano/33">Koi dano Ai dano 33</a>]]></description>
+            <link>http://www.mangareader.net/koi-dano-ai-dano/33</link>
+            <guid isPermaLink="true">http://www.mangareader.net/koi-dano-ai-dano/33</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Battle Through The Heavens 26, 27, 28, 29, 30, 31]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/battle-through-the-heavens"><img src="http://s1.mangareader.net/cover/battle-through-the-heavens/battle-through-the-heavens-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/battle-through-the-heavens/31">Battle Through The Heavens 31</a><br><a href="http://www.mangareader.net/battle-through-the-heavens/30">Battle Through The Heavens 30</a><br><a href="http://www.mangareader.net/battle-through-the-heavens/29">Battle Through The Heavens 29</a><br><a href="http://www.mangareader.net/battle-through-the-heavens/28">Battle Through The Heavens 28</a><br><a href="http://www.mangareader.net/battle-through-the-heavens/27">Battle Through The Heavens 27</a><br><a href="http://www.mangareader.net/battle-through-the-heavens/26">Battle Through The Heavens 26</a>]]></description>
+            <link>http://www.mangareader.net/battle-through-the-heavens</link>
+            <guid isPermaLink="true">http://www.mangareader.net/battle-through-the-heavens</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+        <item>
+            <title>
+                <![CDATA[Combat Continent 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/combat-continent"><img src="http://s1.mangareader.net/cover/combat-continent/combat-continent-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/combat-continent/91">Combat Continent 91</a><br><a href="http://www.mangareader.net/combat-continent/90">Combat Continent 90</a><br><a href="http://www.mangareader.net/combat-continent/89">Combat Continent 89</a><br><a href="http://www.mangareader.net/combat-continent/88">Combat Continent 88</a><br><a href="http://www.mangareader.net/combat-continent/87">Combat Continent 87</a><br><a href="http://www.mangareader.net/combat-continent/86">Combat Continent 86</a><br><a href="http://www.mangareader.net/combat-continent/85">Combat Continent 85</a><br><a href="http://www.mangareader.net/combat-continent/84">Combat Continent 84</a><br><a href="http://www.mangareader.net/combat-continent/83">Combat Continent 83</a><br><a href="http://www.mangareader.net/combat-continent/82">Combat Continent 82</a><br><a href="http://www.mangareader.net/combat-continent/81">Combat Continent 81</a><br><a href="http://www.mangareader.net/combat-continent/80">Combat Continent 80</a><br><a href="http://www.mangareader.net/combat-continent/79">Combat Continent 79</a><br><a href="http://www.mangareader.net/combat-continent/78">Combat Continent 78</a><br><a href="http://www.mangareader.net/combat-continent/77">Combat Continent 77</a><br><a href="http://www.mangareader.net/combat-continent/76">Combat Continent 76</a><br><a href="http://www.mangareader.net/combat-continent/75">Combat Continent 75</a><br><a href="http://www.mangareader.net/combat-continent/74">Combat Continent 74</a><br><a href="http://www.mangareader.net/combat-continent/73">Combat Continent 73</a>]]></description>
+            <link>http://www.mangareader.net/combat-continent</link>
+            <guid isPermaLink="true">http://www.mangareader.net/combat-continent</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[THE DANEMEN 30]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/the-danemen"><img src="http://s1.mangareader.net/cover/the-danemen/the-danemen-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/the-danemen/30">THE DANEMEN 30</a>]]></description>
+            <link>http://www.mangareader.net/the-danemen/30</link>
+            <guid isPermaLink="true">http://www.mangareader.net/the-danemen/30</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Newman 29]]></title>
+            <description>
+                <![CDATA[<a href="http://www.mangareader.net/newman"><img src="http://s1.mangareader.net/cover/newman/newman-l0.jpg" alt=""></a><br><a href="http://www.mangareader.net/newman/29">Newman 29</a>]]></description>
+            <link>http://www.mangareader.net/newman/29</link>
+            <guid isPermaLink="true">http://www.mangareader.net/newman/29</guid>
+            <pubDate>Mon, 15 Jun 2015 11:53:45 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

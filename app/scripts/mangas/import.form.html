@@ -1,0 +1,29 @@
+<md-dialog aria-label="Import mangas" class="form">
+    <form ng-submit="form.importMangas()">
+        <md-dialog-content>
+            <md-input-container flex>
+                <label>Mangas separated by a comma</label>
+                <input ng-model="form.mangas" ng-required="true" />
+            </md-input-container>
+            <md-whiteframe class="md-whiteframe-z1" layout layout-align="center center">
+                <ul class="help-block">
+                    <li>Each value will be matched against the URL slugs of the manga pages on mangareader.net. E.g.:
+                        <ul>
+                            <li><samp>http://www.mangareader.net/<b>naruto</b></samp></li>
+                            <li><samp>http://www.mangareader.net/103/<b>one-piece</b>.html</samp></li>
+                        </ul>
+                    </li>
+                </ul>
+            </md-whiteframe>
+        </md-dialog-content>
+        <div class="md-actions" layout="row">
+            <span flex></span>
+            <md-button type="button" ng-click="form.cancel()" class="md-default">
+                Cancel
+            </md-button>
+            <md-button type="submit" class="md-raised md-primary">
+                Import
+            </md-button>
+        </div>
+    </form>
+</md-dialog>
