@@ -277,7 +277,7 @@ module.exports = function(grunt) {
                 options: {
                     archive: function() {
                         var manifest = grunt.file.readJSON('app/manifest.json');
-                        return 'package/wn-tracker-' + manifest.version + '.zip';
+                        return 'package/mr-tracker-' + manifest.version + '.zip';
                     }
                 },
                 files: [{
@@ -337,7 +337,6 @@ module.exports = function(grunt) {
     grunt.registerTask('default', [
         'jsbeautifier',
         'jshint',
-        'test',
         'build'
     ]);
 };

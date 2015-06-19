@@ -5,30 +5,24 @@ angular.module('mrTracker.mangas', [])
     .controller('ImportMangaFormCtrl', ImportMangaFormCtrl)
     .controller('RemoveMangaFormCtrl', RemoveMangaFormCtrl)
     .controller('ExportMangaFormCtrl', ExportMangaFormCtrl);
+
 /* @ngInject */
 function Manga($resource, API_URL) {
-    return $resource(API_URL + '/manga/:mangaId', {
+    return $resource(API_URL + '/mangas/:mangaId', {
         mangaId: '@mangaId'
-    }, {
-        update: {
-            method: 'PUT'
-        },
-        'delete': {
-            method: 'DELETE'
-        }
     });
 }
 
 /* @ngInject */
-function ImportMangaFormCtrl($mdDialog, $mdToast) {
+function ImportMangaFormCtrl($mdDialog, $mdToast, $http, API_URL) {
     var vm = this;
     vm.mangas = '';
     vm.importMangas = importMangas;
     vm.cancel = cancel;
 
-    function importMangas() {
-        $http.get(API_URL + '/manga/import')
-            .success(function () {
+    function importMangas(mangas) {
+        $http.post(API_URL + '/mangas/import', mangas)
+            .success(function() {
                 var toast = $mdToast.simple()
                     .content('Mangas successfully imported!')
                     .position('top left right')
@@ -37,7 +31,7 @@ function ImportMangaFormCtrl($mdDialog, $mdToast) {
                 $mdToast.show(toast);
                 $mdDialog.hide();
             })
-            .error(function (data, status) {
+            .error(function(data, status) {
                 console.error(data, status);
                 var toast = $mdToast.simple()
                     .content('Could not import the mangas... :(')
@@ -55,15 +49,17 @@ function ImportMangaFormCtrl($mdDialog, $mdToast) {
 }
 
 /* @ngInject */
-function RemoveMangaFormCtrl($mdDialog, $mdToast) {
+function RemoveMangaFormCtrl($mdDialog, $mdToast, $http, API_URL) {
     var vm = this;
     vm.mangas = '';
     vm.removeMangas = removeMangas;
     vm.cancel = cancel;
 
-    function removeMangas() {
-        $http.get(API_URL + '/manga/remove')
-            .success(function () {
+    function removeMangas(mangas) {
+        $http.delete(API_URL + '/mangas', {
+                data: mangas
+            })
+            .success(function() {
                 var toast = $mdToast.simple()
                     .content('Mangas successfully removed!')
                     .position('top left right')
@@ -72,7 +68,7 @@ function RemoveMangaFormCtrl($mdDialog, $mdToast) {
                 $mdToast.show(toast);
                 $mdDialog.hide();
             })
-            .error(function (data, status) {
+            .error(function(data, status) {
                 console.error(data, status);
                 var toast = $mdToast.simple()
                     .content('Could not remove the mangas... :(')
@@ -90,7 +86,7 @@ function RemoveMangaFormCtrl($mdDialog, $mdToast) {
 }
 
 /* @ngInject */
-function ExportMangaFormCtrl($mdDialog, Manga) {
+function ExportMangaFormCtrl($mdDialog, $http, API_URL) {
     var vm = this;
     vm.mangas = '';
     vm.cancel = cancel;
@@ -102,8 +98,16 @@ function ExportMangaFormCtrl($mdDialog, Manga) {
     }
 
     function _init() {
-        Manga.get().$promise.then(function(mangas) {
-            vm.mangas = mangas;
-        });
+        $http.get(API_URL + '/mangas')
+            .success(function(mangaList) {
+                var mangas = '';
+                for (var i = 0; i < mangaList.length; i++) {
+                    mangas += mangaList[i].mangaId;
+                    if (i < mangaList.length - 1) {
+                        mangas += ',';
+                    }
+                }
+                vm.mangas = mangas;
+            });
     }
 }

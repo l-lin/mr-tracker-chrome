@@ -27,8 +27,8 @@ md-toolbar {
 }
 
 md-sidenav {
-    width: 170px;
-    min-width: 170px;
+    width: 180px;
+    min-width: 180px;
 }
 
 .options md-content {
@@ -49,7 +49,7 @@ md-sidenav {
 
 /* CUSTOM */
 samp b {
-    background-color: #03A9F4;
+    background-color: #D32F2F;
     color: #fff;
 }
 
@@ -58,28 +58,12 @@ samp b {
     background-image: url("../images/wait.png");
 }
 
-
-
-
-
 .main-content {
     padding-bottom: 10px;
 }
 
-.favorite {
-    color: #ffd76e;
-}
-
 .clickable {
     cursor: pointer;
-}
-
-.novel-form {
-    padding-top: 40px;
-}
-
-.novel-form-btn {
-    padding-top: 20px;
 }
 
 .sign-in {
@@ -103,6 +87,10 @@ samp b {
     margin-bottom: 5px;
     padding: 5px;
     background-color: #F5F5F5;
+}
+
+.notifications.top {
+    margin-top: 10px;
 }
 
 .notifications .md-button {

@@ -2,9 +2,10 @@
 <md-toolbar class="header">
     <div class="md-toolbar-tools">
         <div ng-if="header.showSwitch">
-            <md-switch aria-label="Track manga" ng-model="header.isMangaTracked" title="{{ header.isMangaTrackedMessage }}" ng-change="header.changeStatus(header.isMangaTracked)">
+            <md-switch aria-label="Track manga" ng-model="header.isMangaTracked" title="{{ header.isMangaTrackedMessage }}" ng-change="header.changeStatus(header.mangaId, header.isMangaTracked)">
             </md-switch>
         </div>
+        <h3>{{ header.mangaId }}</h3>
         <span flex></span>
         <md-button class="md-icon-button" aria-label="Display options" ng-click="header.displayOptions()">
             <span class="btn"><i class="fa fa-bars"></i></span>

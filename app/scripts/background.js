@@ -1,8 +1,8 @@
 (function(chrome) {
     'use strict';
 
-    //var URL = 'https://api-mrtracker.herokuapp.com';
-    var URL = 'http://localhost:3000';
+    var URL = 'https://api-mrtracker.herokuapp.com';
+    //    var URL = 'http://localhost:3000';
 
     var xhr = (function() {
         var xhr = new XMLHttpRequest();
@@ -59,7 +59,7 @@
                 }
                 var badge = count !== 0 ? count : '';
                 window.hasNotifications = count !== 0;
-                render(badge, [65, 131, 196, 255], 'Manga reader tracker');
+                render(badge, [107, 107, 107, 255], 'Manga reader tracker');
             }
         });
     }
@@ -78,9 +78,9 @@
         if (notifications && notifications.length > 0) {
             var alreadyDone = {};
             notifications.forEach(function(notification) {
-                if (!alreadyDone[notification.link]) {
+                if (!alreadyDone[notification.url]) {
                     count++;
-                    alreadyDone[notification.link] = true;
+                    alreadyDone[notification.url] = true;
                 }
             });
         }

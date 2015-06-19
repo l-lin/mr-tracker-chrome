@@ -19,32 +19,31 @@ function Notification($resource, API_URL) {
 }
 
 /* @ngInject */
-function NotificationsCtrl(Notification, $q) {
+function NotificationsCtrl(Notification, $q, $http, API_URL) {
     var vm = this;
-    // Map <link, [ids]>
+    // Map <url, [ids]>
     var mapLinkIds = {};
-    vm.hasNotifications = false;
     vm.notifications = [];
+    vm.notificationsNewManga = [];
     vm.openNotification = openNotification;
+    vm.openNotificationNewManga = openMangaInNewTab;
     vm.removeNotification = removeNotification;
 
-    //_init();
+    _init();
 
-    function openNotification(link) {
-        removeNotification(link);
+    function openNotification(url) {
+        removeNotification(url, openMangaInNewTab);
+    }
+
+    function openMangaInNewTab(url) {
         chrome.tabs.create({
-            url: link
+            url: url
         });
     }
 
-    function removeNotification(link) {
-        // We are removing afterward, so instead of waiting, we set the flag immediately
-        if (vm.notifications.length === 1) {
-            vm.hasNotifications = false;
-        }
-
+    function removeNotification(url, callback) {
         var promises = [];
-        mapLinkIds[link].forEach(function(notification) {
+        mapLinkIds[url].forEach(function(notification) {
             promises.push(Notification.delete({
                 notificationId: notification.notificationId
             }).$promise);
@@ -52,7 +51,7 @@ function NotificationsCtrl(Notification, $q) {
         $q.all(promises).then(function() {
             var index = 0;
             for (var i = 0; i < vm.notifications.length; i++) {
-                if (vm.notifications[i].link === link) {
+                if (vm.notifications[i].url === url) {
                     index = i;
                     break;
                 }
@@ -62,21 +61,27 @@ function NotificationsCtrl(Notification, $q) {
             chrome.runtime.sendMessage({
                 rerender: true
             });
+
+            if (callback) {
+                callback(url);
+            }
         });
     }
 
     function _init() {
         Notification.query().$promise.then(function(notifications) {
             notifications.forEach(function(notification) {
-                if (!mapLinkIds[notification.link]) {
+                if (!mapLinkIds[notification.url]) {
                     vm.notifications.push(notification);
-                    mapLinkIds[notification.link] = [];
+                    mapLinkIds[notification.url] = [];
                 }
-                mapLinkIds[notification.link].push(notification);
+                mapLinkIds[notification.url].push(notification);
             });
-            if (notifications.length > 0) {
-                vm.hasNotifications = true;
-            }
         });
+
+        $http.get(API_URL + '/newMangas')
+            .success(function(notificationsNewManga) {
+                vm.notificationsNewManga = notificationsNewManga;
+            });
     }
 }
